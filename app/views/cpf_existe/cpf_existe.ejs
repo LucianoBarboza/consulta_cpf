@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>DADOS PESSOAIS:</title>
+		</head>
+	<body>
+
+		<h1>DADOS PESSOAIS:</h1>
+		<table>
+			<tr>
+				<td>CPF</td>
+				<td>NOME</td>
+				<td>NASCIMENTO</td>
+				<td>PROFISSAO</td>
+				<td>CEP</td>
+				<td>NUMERO RESIDENCIA</td>
+				<td>COMPLEMENTO</td>
+				<td>CPNJ</td>
+				<td>NOME EMPRESA</td>
+				<td>TELEFONES</td>
+			</tr>
+
+			<% for(var i = 0; i< cpf.length;i++){ %>
+				<tr>
+					<td><%= cpf[i].cpf %></td>
+					<td><%= cpf[i].nome %></td>
+					<td><%= cpf[i].born_at %></td>
+					<td><%= cpf[i].occupation %></td>
+					<td><%= cpf[i].zipcode %></td>
+					<td><%= cpf[i].number %></td>
+					<td><%= cpf[i].complement %></td>
+					<td><%= cpf[i].cnpj %></td>
+					<td><%= cpf[i].nome_empresa %></td>
+					<td><%= cpf[i].telefones %></td>
+				</tr>
+			<% }%>
+		</table>
+
+
+
+	</body>
+</html>
